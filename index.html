@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Photo App</title>
+  </head>
+  <body>
+    <main>
+      <h1>Welcome to the Cat Photo App</h1>
+      <section>
+        <h2>Cat Photos</h2>
+        <p>
+          Everyone loves
+          <a href="https://www.pexels.com/search/cat/" target="_blank"
+            >cute cats</a
+          >
+          online!
+        </p>
+        <p>
+          See more
+          <a href="https://www.pexels.com/search/cat/" target="_blank"
+            >cat photos</a
+          >
+          in our gallery.
+        </p>
+        <a href="https://www.pexels.com/search/cat/"
+          ><img src="cat.jpg" alt="white fluffy cat" width="150" height="200"
+        /></a>
+      </section>
+      <section>
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+        <ul>
+          <li>Catnip</li>
+          <li>Laser pointers</li>
+          <li>Lasagna</li>
+        </ul>
+        <figure>
+          <img src="catnip.jpg" alt="catnip" width="150" height="200" />
+          <figcaption>Cats <em>loves </em> catnip</figcaption>
+        </figure>
+        <h3>Things cats hate:</h3>
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <figure>
+          <img src="thunder.jpeg" alt="thunder" width="150" height="200" />
+          <figcaption>Cats <strong>hates </strong> thunder</figcaption>
+        </figure>
+      </section>
+      <section>
+        <h3>Cat Form</h3>
+
+        <form action="/submit-url">
+         <fieldset>
+          <legend>Is your cat an indoor or outdoor cat?</legend>
+          <label for="indoor"> <input checked type="radio" id="indoor" name="in-out" value="indoor"> Indoor</label>
+         <label for="outdoor"> <input type="radio" id="outdoor" name="in-out" value="outdoor"> Outdoor</label>
+         </fieldset>
+         <fieldset>
+          <legend>What's your cat's personality?</legend>
+          <label for="loving"><input checked type="checkbox" name="personality" id="loving">Loving</label>
+          <label for="lazy"></label><input type="checkbox" name="personality" id="lazy">Lazy</label>
+          <label for="energetic"><input type="checkbox" name="personality" id="energetic">Energetic</label>
+         </fieldset>
+            <input type="text" name="name"  placeholder="cat photo URL" required />
+            <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>© 2025 Cat Photo App</p>
+      <p>freecodecamp.org</p>
+    </footer>
+  </body>
+</html>
